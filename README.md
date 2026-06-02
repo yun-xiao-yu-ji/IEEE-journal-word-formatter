@@ -30,3 +30,11 @@ Postgraduates, doctoral candidates and professional researchers who need to subm
 
 ## Authors
 Yunxiao Liu(2240902154@cnu.edu.cn, Capital Normal University), Mingliao Gao (Capital Normal University)
+
+## Support the Author
+If you find this IEEE journal formatting skill helpful for your academic submission, you are welcome to buy the author a coffee as a voluntary tip.
+This is a **purely voluntary gesture** — the full skill functionality is completely free for academic use, and no features are locked behind payment.
+
+赞赏码（请作者喝杯咖啡）
+
+Note: Voluntary appreciation is not commercial activity, and does not represent any paid service or charged function.
