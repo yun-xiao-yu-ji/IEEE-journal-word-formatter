@@ -28,9 +28,6 @@ Complete step-by-step deployment & operation guides for this skill are published
 ## Target Users
 Postgraduates, doctoral candidates and professional researchers who need to submit papers to IEEE-indexed journals.
 
-## Authors
-Yunxiao Liu(2240902154@cnu.edu.cn, Capital Normal University), Mingliao Gao (Capital Normal University)
-
 ## Support the Author
 If you find this IEEE journal formatting skill helpful for your academic submission, you are welcome to buy the author a coffee as a voluntary tip.
 This is a **purely voluntary gesture** — the full skill functionality is completely free for academic use, and no features are locked behind payment.
@@ -38,3 +35,18 @@ This is a **purely voluntary gesture** — the full skill functionality is compl
 赞赏码（请作者喝杯咖啡）
 
 Note: Voluntary appreciation is not commercial activity, and does not represent any paid service or charged function.
+
+---
+
+## ⚖️ Disclaimer (Legal Statement)
+1. This skill is an **academic auxiliary tool based on LLM**, NOT an official product of IEEE. It does not represent endorsement or certification by IEEE.
+2. The format conversion result is for reference only. Authors **must manually verify** whether the output fully complies with the latest author guidelines of the target IEEE journal before submission.
+3. The authors shall not be responsible for any consequences including but not limited to manuscript rejection, review delay or formatting errors caused by relying on the output of this skill.
+4. This skill is provided "**AS IS**" without any express or implied warranties, including but not limited to warranties of completeness, accuracy or fitness for a particular purpose.
+5. The authors bear no responsibility for any unauthorized commercial use, modification or distribution of this skill by third parties. Users who violate the non-commercial clause shall bear all legal liabilities independently.
+
+---
+
+## Authors
+Yunxiao Liu(2240902154@cnu.edu.cn, Capital Normal University), Mingliao Gao (Capital Normal University)
+
