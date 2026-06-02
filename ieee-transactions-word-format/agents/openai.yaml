@@ -1,0 +1,4 @@
+interface:
+  display_name: "IEEE Transactions Word Format"
+  short_description: "Format manuscripts using an IEEE Transactions Word template."
+  default_prompt: "Format this manuscript as an IEEE Transactions Word document using the bundled template."
