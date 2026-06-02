@@ -77,6 +77,35 @@ def clear_body(doc: Document) -> None:
         body.remove(child)
 
 
+def ensure_cols(section, *, two_column: bool) -> None:
+    cols = section._sectPr.xpath("./w:cols")
+    if cols:
+        cols = cols[0]
+    else:
+        cols = OxmlElement("w:cols")
+        section._sectPr.append(cols)
+    if two_column:
+        cols.set(qn("w:num"), "2")
+        cols.set(qn("w:space"), "720")
+        cols.set(qn("w:equalWidth"), "0")
+        for child in list(cols):
+            cols.remove(child)
+        col1 = OxmlElement("w:col")
+        col1.set(qn("w:w"), "5040")
+        col1.set(qn("w:space"), "288")
+        col2 = OxmlElement("w:col")
+        col2.set(qn("w:w"), "5040")
+        col2.set(qn("w:space"), "0")
+        cols.append(col1)
+        cols.append(col2)
+    else:
+        for attr in (qn("w:num"), qn("w:equalWidth")):
+            cols.attrib.pop(attr, None)
+        for child in list(cols):
+            cols.remove(child)
+        cols.set(qn("w:space"), "720")
+
+
 def media_blobs(docx_path: Path) -> list[bytes]:
     with zipfile.ZipFile(docx_path) as zf:
         names = sorted(
@@ -304,6 +333,7 @@ def build_document(input_path: Path, output_path: Path, args) -> list[str]:
     source = Document(input_path)
     output = Document(TEMPLATE_PATH)
     clear_body(output)
+    ensure_cols(output.sections[0], two_column=False)
     images = media_blobs(input_path)
     warnings = []
 
@@ -313,8 +343,8 @@ def build_document(input_path: Path, output_path: Path, args) -> list[str]:
     add_paragraph(output, title, "Title")
     add_paragraph(output, authors, "Authors")
     output.add_section(WD_SECTION.CONTINUOUS)
-    output.sections[-1]._sectPr.xpath("./w:cols")[0].set(qn("w:num"), "2")
-    output.sections[-1]._sectPr.xpath("./w:cols")[0].set(qn("w:equalWidth"), "0")
+    ensure_cols(output.sections[0], two_column=False)
+    ensure_cols(output.sections[-1], two_column=True)
     add_footnote_marker(output)
     if abstract:
         add_paragraph(output, f"Abstract\u2014{abstract}", "Abstract")
