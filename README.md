@@ -1,8 +1,15 @@
 # IEEE-journal-word-formatter
-## Project Overview
-A lightweight LLM-based skill tailored for academic researchers across engineering and natural science fields, which automatically standardizes unformatted Word manuscripts to comply with official IEEE journal formatting specifications via large language model dialogue invocation. This project is developed as an embedded skill module instead of standalone installable desktop software, no program setup, EXE packaging or environment pre-deployment is required; users can directly load and call this skill in compatible large model platforms to finish tedious IEEE typesetting revisions in one conversation.
+A handy LLM-based skill for Codex to convert unformatted Word manuscripts into standard IEEE journal submission format in just 3 minutes.
 
-The skill covers mainstream IEEE formatting rules including reference citation styles, paragraph indentation, figure & table caption specification, abstract/keyword layout, header-footer rules and journal-specific manuscript margin constraints, drastically cutting down the manual typesetting workload before journal submission.
+---
+
+## 🚫 Non-Commercial Use Only (Strictly Prohibited for Commercial Purposes)
+This repository provides **prompt engineering scripts, configuration rules, and formatting specification documents** designed as a Codex-compatible skill, **not standalone commercial software**.
+- **Allowed**: Personal study, academic research, free formatting for IEEE journal submissions.
+- **Prohibited**: Any commercial use, including selling this skill, providing paid formatting services, integrating into commercial products, or profiting from this skill in any form.
+- Any violation of the non-commercial clause will result in immediate termination of usage rights and may pursue legal liability.
+
+---
 
 ## Core Position Description
 > Important note: This repository only contains prompt engineering scripts, configuration rules and auxiliary specification documents for LLM-oriented skill, **not independent desktop application software**. This skill is specially built for Codex and homologous large model platforms; users only need to import the skill into the large model runtime to complete paper format modification through dialogue interaction.
@@ -12,6 +19,7 @@ The skill covers mainstream IEEE formatting rules including reference citation s
 2. Extremely time-consuming manual IEEE typesetting: Researchers spend hours or even whole days manually adjusting reference styles, page margins, figure/table captions, paragraph indentation and abstract layout to match IEEE official rules repeatedly. Relying on this Codex skill, users can upload unarranged original drafts and finish full IEEE standard formatting within merely 3 minutes, eliminating redundant manual revision work.
 3. Fragmented formatting specifications across IEEE sub-journals: IEEE Transactions, Letters and Magazine branches each carry subtle differentiated layout clauses without a unified universal standard, which requires continuous optimization of built-in prompt rules to adapt to diverse sub-journal formatting demands.
 4. Chaotic formatting of user source manuscripts: Authors’ original drafts often include disordered line breaks, mixed Chinese-English typography and references written in inconsistent GB/T, APA or Harvard formats, so the skill needs flexible prompt logic to identify and normalize messy input contents automatically.
+
 
 ## Detailed User Tutorial
 Complete step-by-step deployment & operation guides for this skill are published exclusively on our official WeChat Official Account.
