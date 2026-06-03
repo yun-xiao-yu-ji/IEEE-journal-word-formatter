@@ -48,5 +48,5 @@ Note: Voluntary appreciation is not commercial activity, and does not represent 
 ---
 
 ## Authors
-Yunxiao Liu(2240902154@cnu.edu.cn, Capital Normal University), Mingliao Gao (Capital Normal University)
+yun-xiao-yu-ji(1441311282@qq.com)
 
